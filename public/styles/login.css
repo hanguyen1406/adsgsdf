@@ -1,0 +1,753 @@
+@font-face {
+    font-family: "SFS";
+    src: url("/login/assets/fonts/SalesforceSans/SalesforceSans-Regular.eot"); /* IE9 */
+    src: url("/login/assets/fonts/SalesforceSans/SalesforceSans-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("/login/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff2")
+            format("woff2"),
+        /* Chrome 26+, Opera 23+ */
+            url("/login/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff")
+            format("woff"),
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url("/login/assets/fonts/SalesforceSans/SalesforceSans-Regular.svg#web")
+            format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "SFSLight";
+    src: url("/login/assets/fonts/SalesforceSans/SalesforceSans-Light.eot")
+        format("eot"); /* IE9 */
+    src: url("/login/assets/fonts/SalesforceSans/SalesforceSans-Light.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */
+            url("/login/assets/fonts/SalesforceSans/SalesforceSans-Light.woff2")
+            format("woff2"),
+        /* Chrome 26+, Opera 23+ */
+            url("/login/assets/fonts/SalesforceSans/SalesforceSans-Light.woff")
+            format("woff"),
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url("/login/assets/fonts/SalesforceSans/SalesforceSans-Light.svg#web")
+            format("svg"); /* Legacy iOS */
+}
+
+html,
+body {
+    font-family: SFS, Arial, sans-serif;
+    color: #16325c;
+}
+
+body {
+    padding: 0px;
+    margin: 0 auto;
+    font-size: 0.8125rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: SFSLight, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-family: SFSLight, Arial, sans-serif;
+}
+
+h3 {
+    font-size: 0.875rem;
+    font-family: SFSLight, Arial, sans-serif;
+    color: #032d60;
+}
+
+:placeholder {
+    color: #54698d;
+}
+
+::-webkit-input-placeholder {
+    color: #54698d;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #54698d;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #54698d;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #54698d;
+}
+
+/* Positioning */
+
+.pr {
+    position: relative;
+}
+
+.di {
+    display: inline;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+/* Floats */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* Margins */
+
+.ma {
+    margin: 0 auto;
+}
+
+.mr8 {
+    margin-right: 8px;
+    margin-top: 7px;
+}
+
+.mr16 {
+    margin-right: 16px;
+}
+#msg{
+    color: rgb(194, 57, 52);
+    font-size: 12px;
+}
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb12 {
+    margin-bottom: 0.75rem;
+}
+
+.mb14 {
+    margin-bottom: 0.875rem;
+}
+
+.mb16 {
+    margin-bottom: 1rem;
+}
+
+.mb20 {
+    margin-bottom: 1.25rem;
+}
+
+.mb24 {
+    margin-bottom: 1.5rem;
+}
+
+.mt2 {
+    margin-top: 2px;
+}
+
+.mt8 {
+    /* margin-top: 0.5rem; */
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+/* Radius  */
+
+.r4 {
+    border-radius: 4px;
+}
+
+/* Padding */
+
+.p16 {
+    padding: 16px 0;
+}
+
+.pt16 {
+    padding-top: 16px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pt40 {
+    padding-top: 40px;
+}
+
+/* Borders  */
+
+.bt {
+    border-top: 1px solid #f4f6f9;
+}
+
+img.logo {
+    width: 160px;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+img.licensing {
+    height: 20px;
+    width: 20px;
+    margin: 0 4px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+a:hover,
+a:active {
+    color: #005fb2;
+}
+
+a:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.required {
+    color: #ea001e;
+}
+
+p {
+    display: block;
+    text-align: left;
+    text-align: start;
+    margin: 0px;
+    line-height: 1.5rem;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.whiteHeader {
+    color: #fff;
+}
+
+/*the UL above seems to break the next element so put in a no-op*/
+code {
+}
+
+.passwordul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+/*the UL above seems to break the next element so put in a no-op*/
+code {
+}
+
+.passwordicon {
+    padding-right: 8px;
+    width: 16px;
+}
+
+.disabled {
+}
+
+.small {
+    font-size: 0.75rem;
+}
+
+p.small a {
+    font-size: 0.75rem;
+}
+
+.label {
+    font-size: 12px;
+    color: #54698d;
+    margin: 0 0 8px 0;
+    line-height: inherit;
+}
+
+div,
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Divider */
+.divider {
+    border-top: 2px solid;
+    color: #939393;
+}
+
+.zen-assistiveText {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 0;
+    font-size: 0.8125rem;
+    font-family: SFS, Arial, sans-serif;
+    color: white;
+    background-color: #d8dde6;
+    cursor: pointer;
+    background-image: none !important;
+}
+
+/* Style a link to look like a button */
+a.button {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a.primary,
+a.primary:link,
+a.primary:visited,
+a.primary:hover,
+a.primary:active {
+    color: white;
+}
+
+a.secondary,
+a.secondary:link,
+a.secondary:primary,
+a.secondary:hover,
+a.secondary:active {
+    color: #0070d2;
+}
+
+button#password-button:disabled {
+    cursor: default;
+}
+
+.fiftyfifty {
+    width: 48%;
+}
+
+.error {
+    color: #cf4f43;
+}
+
+.errorcode {
+    font-size: 10px;
+    color: #54698d; /* Color for labels */
+}
+
+.primary {
+    background-color: #0070d2;
+    color: white;
+    transition: all 0.1s;
+    border: 1px solid transparent;
+}
+
+.primary:hover,
+.primary:focus {
+    background-color: #005fb2;
+}
+
+.secondary {
+    background-color: #ffffff;
+    border: 1px solid #969492;
+    color: #0070d2 !important;
+}
+
+.secondary:hover {
+    background-color: #f4f6f9;
+}
+
+.wide {
+    width: 100%;
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.right p {
+    font-size: 17px;
+}
+.left {
+    flex: 1;
+}
+
+/* Inputs */
+
+input {
+    height: auto !important;
+}
+
+input#answer {
+    margin-top: 8px;
+}
+
+input.input,
+select.input,
+input.answer-input.input,
+input.password-input.input {
+    border: 1px solid #969492;
+    border-radius: 4px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: #fff;
+    font-family: SFS, Arial, sans-serif;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-size: 0.8125rem;
+    transition: all 0.1s;
+}
+
+.input {
+    padding: 12px;
+}
+
+.password-input {
+    padding: 12px !important;
+}
+
+.answer-input {
+    padding: 12px !important;
+}
+
+select.input#question {
+    padding: 12px 40px;
+    background-image: url("/img/disclosure.gif");
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+}
+
+.input:focus {
+    background-color: #ffffff;
+    border: 1px solid #1589ee;
+    outline: 0;
+    box-shadow: 0 0 3px #0070d2;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+input.twofactor {
+    background-image: url("/img/keys.png");
+    background-repeat: no-repeat;
+    background-position: 12px, 12px;
+    background-size: 14px 18px;
+    padding: 12px 40px;
+}
+
+input.error {
+    border: 1px solid #c23934;
+}
+
+input[type="radio"] {
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+/* Removes native iOS button styling */
+input[type="submit"] {
+    -webkit-appearance: none;
+}
+
+input[type="button"] {
+    -webkit-appearance: none;
+}
+
+.tablewrapper {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.username {
+    display: block;
+}
+
+.password {
+    display: block;
+}
+
+input.answer-input:focus,
+input.password-input:focus {
+    background-color: #ffffff;
+    border: 1px solid #1589ee;
+    outline: 0;
+}
+
+.password-wrapper {
+    position: relative;
+    background: #fff;
+}
+
+.password-message {
+    display: block;
+    line-height: 45px;
+    font-size: 10px;
+    padding: 0 10px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+html[dir="rtl"] .password-message {
+    right: auto;
+    left: 0;
+}
+
+.password-none {
+    border: 1px solid #1589ee;
+}
+
+.password-none-color {
+    color: #16325c;
+}
+
+input.password-input.password-weak,
+input.password-input.password-weak:focus {
+    border: 1px solid #ba0517;
+}
+
+.password-weak-color {
+    color: #ba0517;
+}
+
+input.password-input.password-good,
+input.password-input.password-good:focus {
+    border: 1px solid #2e844a;
+}
+
+.password-good-color {
+    color: #2e844a;
+}
+
+.password-focus {
+    border: 1px solid #1589ee;
+}
+
+.password-strong {
+}
+
+.twofactor-input {
+    background-image: url("/img/iconCode.png");
+    background-repeat: no-repeat;
+    background-position: 12px, 12px;
+    background-size: 14px 18px;
+    padding: 12px 40px;
+}
+
+.phone-input {
+    background-image: url("/img/iconPhone.png");
+    background-repeat: no-repeat;
+    background-position: 12px, 12px;
+    background-size: 14px 18px;
+    padding: 12px 40px;
+}
+
+.clear-input {
+    background-image: url("/img/iconClear.png");
+    background-repeat: no-repeat;
+    background-position: 12px, 12px;
+    background-size: 14px 18px;
+    padding: 12px 40px;
+}
+
+#wrapper {
+    padding: 60px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 380px;
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.standard_logo_wrapper {
+    height: 113px;
+    overflow: hidden;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table;
+}
+
+.standard_logo {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    max-width: 180px;
+    max-height: 113px;
+}
+
+#header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: SFSLight, Arial, sans-serif;
+    display: block;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 20px;
+    background-color: rgba(250, 250, 250);
+} /* padding is footer height plus an extra 24px of spacing */
+
+#footer {
+    position: relative;
+    margin-top: -24px; /* negative value of footer height */
+    height: 24px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    font-size: 0.75rem;
+}
+footer {
+    text-align: center;
+}
+#content {
+    margin: 0px auto;
+    padding: 1.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid #d8dde6;
+    color: #16325c;
+    background-color: #ffffff;
+}
+
+p.large {
+    font-size: 1.125rem;
+    font-family: SFSLight, Arial, sans-serif;
+}
+
+.important {
+    font-weight: bold;
+}
+
+.wordwrap {
+    word-wrap: break-word;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+/* Login page sections */
+
+#left {
+    display: table-cell;
+    height: 100%;
+}
+
+#right {
+    display: table-cell;
+    vertical-align: top;
+    background-color: #d8dde6;
+    width: 50%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#right iframe {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: none;
+    float: right;
+}
+
+.container:not(flowruntime-flow *) {
+    border: 1px solid #d8dde6;
+    padding: 20px;
+    border-radius: 4px;
+    color: #16325c;
+}
+
+/* Login form */
+
+#pwcaps {
+    font-size: 12px;
+    color: #54698d;
+    margin-top: -8px;
+}
+
+#pwcapsicon {
+    margin-right: 8px;
+}
+
+.inputgroup {
+    position: relative;
+}
+
+.loginError {
+    color: #c23934;
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+#idcard-container {
+    background-color: #ffffff;
+    border: 1px solid #969492;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+#idcard {
+    padding: 3px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.table-container {
+    display: flex;
+    width: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .right {
+        display: none;
+    }
+}

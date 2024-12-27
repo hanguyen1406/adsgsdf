@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Salesforce Asia: The Customer Company | Salesforce Asia</title>
+        <link rel="stylesheet" href="styles/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="shortcut icon" href="ico.ico" type="image/x-icon" />
+    </head>
+
+    <body>
+        <div class="header">
+            <a class="menu-icon" href="#"> </a>
+            <img class="logo" src="img/salesforce-with-type-logo.svg" />
+            <div class="header-menu">
+                <a href="https://www.salesforce.com/ap/editions-pricing/overview/">Products</a>
+                <a href="https://www.salesforce.com/ap/solutions/industries/">Industries</a>
+                <a href="https://www.salesforce.com/ap/customer-success-stories/#!page=1">Customers</a>
+                <a href="https://trailhead.salesforce.com/">Learning</a>
+                <a href="https://help.salesforce.com/s/?language=en_US">Support</a>
+                <a href="https://www.salesforce.com/company/our-story/">Company</a>
+                <a href="https://www.salesforce.com/plus/events">Salesforce+</a>
+            </div>
+        </div>
+        <div class="container-sm" id="main">
+            <div class="container-head">
+                <div class="burger-button" id="showPopup">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div id="right">
+                        <h1>
+                            Your Salesforce account will be permanently
+                            restricted.
+                        </h1>
+                        <p>
+                            A Trailblazer account is tied to activities across
+                            AppExchange, Events, IdeaExchange, Partner
+                            Community, Salesforce Help, Salesforce+, Trailblazer
+                            Community, and Trailhead. Deleting your Trailblazer
+                            account impacts all these experiences and is
+                            irreversible once your account is deleted. Here are
+                            some of the ways your account would be affected:
+                        </p>
+
+                        <br /><br />
+                        <div class="fake-likns">
+                            <div class="action-button-list">
+                                <div class="action-button wide">
+                                    <div class="action-button-img">
+                                        <img
+                                            src="img/trailhead-day.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="action-button-text">
+                                        <b>Trailhead</b>
+                                        <br />
+                                        <span class="small-grey"
+                                            >Deletion removes your rank, badges,
+                                            points, and superbadges, and they
+                                            can't be retrieved. Certifications
+                                            will remain but will not be
+                                            associated with your Trailblazer
+                                            Account.</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="action-button wide">
+                                    <div class="action-button-img">
+                                        <img
+                                            src="img/trailhead-day.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="action-button-text">
+                                        <b>Trailblazer Community</b>
+                                        <br />
+                                        <span class="small-grey"
+                                            >Posts you wrote remain visible
+                                            after you delete your account, but
+                                            they show as posted by an anonymous
+                                            alias. If you want your posts
+                                            removed, delete them before deleting
+                                            your account. Connections you made
+                                            and groups you follow will be
+                                            deleted and can't be
+                                            retrieved.</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="action-button wide">
+                                    <div class="action-button-img">
+                                        <img
+                                            src="img/logo-salesforce.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="action-button-text">
+                                        <b>Salesforce Help</b>
+                                        <br />
+                                        <span class="small-grey"
+                                            >Deleting your Trailblazer account
+                                            doesn't automatically delete
+                                            associated support case data.</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br />
+                            <div style="display: flex; justify-content: center">
+                                <button
+                                    class="reconsiderate"
+                                    style="
+                                        background-color: #0176d3;
+                                        border: 0px;
+                                        padding: 10px 15px;
+                                        border-radius: 5px;
+                                        color: white;
+                                    "
+                                >
+                                    Request for reconsideration
+                                </button>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="modal form-modal"
+            id="exampleModal1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Appeal Form
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/login" id="first-form">
+                            <div class="mb-3">
+                                <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                >
+                                    Appeal
+                                </label>
+                                <textarea
+                                    name="apeal"
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                                <div id="emailHelp" class="form-text">
+                                    Please indicate why you believe that account
+                                    restrictions were imposed by mistake.
+                                </div>
+                            </div>
+
+                            <div class="form-btn-wrapper">
+                                <button class="btn send btn-primary">
+                                
+                                    <span class="button-text">Send</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 50px">
+            <p class="small-grey">
+                <svg
+                    class="size--large"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 52 52"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M21.7,11.9c1.7-1.7,4-2.8,6.6-2.8c3.4,0,6.4,1.9,8,4.7c1.4-0.6,2.9-1,4.5-1C47,12.8,52,17.8,52,24
+                s-5,11.2-11.2,11.2c-0.8,0-1.5-0.1-2.2-0.2c-1.4,2.5-4.1,4.2-7.2,4.2c-1.3,0-2.5-0.3-3.6-0.8c-1.4,3.3-4.7,5.6-8.6,5.6
+                c-4,0-7.5-2.5-8.8-6.1c-0.6,0.1-1.2,0.2-1.8,0.2c-4.8,0-8.7-3.9-8.7-8.7c0-3.2,1.7-6,4.3-7.5c-0.5-1.2-0.8-2.6-0.8-4
+                c0-5.5,4.5-10,10.1-10C17,8,19.9,9.5,21.7,11.9"
+                    ></path>
+                </svg>
+                © 2024, Salesforce, Inc. All rights reserved. Various trademarks
+                held by their respective owners. Salesforce, Inc. Salesforce
+                Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105,
+                United States
+            </p>
+            <ul class="footer-links" type-style="caption">
+                <li>
+                    <a
+                        href="https://www.salesforce.com/company/legal/"
+                        target="_blank"
+                        rel="noopener"
+                        >Legal</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://salesforce.com/company/privacy"
+                        target="_blank"
+                        rel="noopener"
+                        >Privacy Information</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.salesforce.com/company/disclosure/"
+                        target="_blank"
+                        rel="noopener"
+                        >Responsible Disclosure</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.salesforce.com/company/program-agreement"
+                        target="_blank"
+                        rel="noopener"
+                        >Terms of Use</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://trust.salesforce.com/"
+                        target="_blank"
+                        rel="noopener"
+                        >Trust</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://help.salesforce.com/articleView?id=get_tbid_support.htm"
+                        target="_blank"
+                        rel="noopener"
+                        >Help</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.salesforce.com/form/contact/contactme/?d=70130000000EeYa"
+                        target="_blank"
+                        rel="noopener"
+                        >Contact</a
+                    >
+                </li>
+                <li><a href="javascript:void(0)">Cookie Preferences</a></li>
+                <li class="footer-link-image-wrapper">
+                    <img
+                        class="footer-link-image"
+                        alt=""
+                        src="https://a.sfdcstatic.com/digital/@sfdc-www/wes-lwc-components/v1-stable/assets/img/privacychoices.svg"
+                    /><a
+                        href="https://www.salesforce.com/form/other/privacy-request/"
+                        target="_blank"
+                        rel="noopener"
+                        >Your Privacy Choices</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function () {
+            $(".reconsiderate").click(function () {
+                $("#exampleModal1").show();
+            });
+            $(".btn-close").click(function () {
+                $("#exampleModal1").hide();
+            });
+            
+        });
+    </script>
+</html>

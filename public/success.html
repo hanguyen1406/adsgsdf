@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Salesforce Asia: The Customer Company | Salesforce Asia</title>
+        <link rel="stylesheet" href="styles/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+
+    <body>
+        <div
+            class="modal form-modal"
+            id="exampleModal1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <b class="modal-title" id="exampleModalLabel">
+                            <p style="font-size: 25px">Request has been sent</p>
+                        </b>
+                    </div>
+                    <div class="modal-body">
+                        <form action="https://www.salesforce.com" id="first-form">
+                            <div class="mb-3">
+                                <img
+                                    src="img/phone.png"
+                                    class="img-fluid"
+                                    alt="success"
+                                />
+                            </div>
+                            <label
+                                for="exampleFormControlTextarea1"
+                                class="form-label"
+                            >
+                                Your request has been added to the processing
+                                queue. We will process your request within 24
+                                hours. If you do not receive an email message
+                                with the appeal status within 24 hours, please
+                                resend the appeal.
+                            </label>
+
+                            <div class="form-btn-wrapper">
+                                <button type="submit" style="background-color: #1797c0;color: aliceblue;" class="btn">
+                                    <span  class="return button-text">Return On Salesforce</span>
+                                </button>
+                            </div>
+                            <div style="text-align: center;">
+                                <img style="width: 120px;" src="img/logo-salesforce.svg" />
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            jQuery(document).ready(function () {
+                $(".form-modal").show();
+              
+            });
+        </script>
+    </body>
+</html>
